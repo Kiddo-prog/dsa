@@ -1,4 +1,4 @@
-from os import curdir
+from audioop import add
 
 
 class Node:
@@ -67,7 +67,11 @@ class LinkedList:
                 return
             cur_id += 1
 
-
-
-
-list = LinkedList()
+if __name__ == '__main__':
+    list = LinkedList()
+    list.display()
+    list.append(2)
+    list.display()
+    list.append(6)
+    list.display()
+    print(list.length())
